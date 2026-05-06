@@ -364,9 +364,9 @@ def draw_text_screen(surface, title, lines, footer=None):
 
 def draw_main_menu(surface, menu_sel):
     surface.fill(BLACK)
-    t = bigfont.render("AC'S TETRIS", True, (255, 215, 0))
+    t = bigfont.render("AC's Tetris", True, (255, 215, 0))
     surface.blit(t, (WIDTH // 2 - t.get_width() // 2, 36))
-    st = font.render("Famicom Edition", True, GRAY)
+    st = font.render("by ac holding", True, GRAY)
     surface.blit(st, (WIDTH // 2 - st.get_width() // 2, 78))
     y0 = 130
     for i, (label, _) in enumerate(MENU_ITEMS):
